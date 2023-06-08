@@ -1,0 +1,249 @@
+/* Add this CSS code inside a media query for smaller screens */
+@media screen and (max-width: 768px) {
+  header nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  header nav ul li {
+    margin-bottom: 10px;
+  }
+
+  .login-signup {
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .slider {
+    max-width: 100%;
+  }
+
+  .slick-prev,
+  .slick-next {
+    width: 30px;
+    height: 30px;
+    font-size: 14px;
+  }
+
+  .slick-dots {
+    bottom: 10px;
+  }
+
+  .slick-dots li {
+    margin: 0 3px;
+  }
+
+  button.slick-prev.slick-arrow,
+  button.slick-next.slick-arrow {
+    width: 30px;
+    height: 30px;
+    font-size: 14px;
+  }
+}
+
+/* Original CSS code */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Monospace, Arial, sans-serif;
+  background-color: #f1f1f1;
+}
+
+header {
+  background-color: #4CAF50;
+  padding: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.main-content {
+  padding: 20px;
+}
+
+#home {
+  text-align: center;
+}
+
+#home h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.slider {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.slider img {
+  width: 100%;
+  height: auto;
+}
+
+.slider .slick-prev,
+.slider .slick-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  color: #ffffff;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.slider .slick-prev:hover,
+.slider .slick-next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.slider .slick-prev {
+  left: 20px;
+}
+
+.slider .slick-next {
+  right: 20px;
+}
+
+.slider .slick-dots {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.slider .slick-dots li {
+  margin: 0 5px;
+}
+
+.slider .slick-dots button {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.slider .slick-dots button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.login-signup {
+  text-align: right;
+}
+
+.login-signup a {
+  padding: 8px 16px;
+  background-color: darkslategrey;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 100px;
+}
+
+.login-signup a:hover {
+  background-color: #2e6b31;
+}
+
+footer {
+  background-color: #4CAF50;
+  padding: 20px;
+  color: #ffffff;
+  text-align: center;
+}
+
+button.slick-next.slick-arrow {
+  width: 40px;
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  color: #ffffff;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border: none;
+}
+
+button.slick-next.slick-arrow::before {
+  content: "";
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 14px solid #ffffff;
+}
+
+button.slick-next.slick-arrow:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+button.slick-next.slick-arrow span {
+  display: none;
+}
+
+button.slick-prev.slick-arrow {
+  width: 40px;
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  color: #ffffff;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border: none;
+}
+
+button.slick-prev.slick-arrow::before {
+  content: "";
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 14px solid #ffffff;
+}
+
+button.slick-prev.slick-arrow:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+button.slick-prev.slick-arrow span {
+  display: none;
+}

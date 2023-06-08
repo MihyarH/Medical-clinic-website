@@ -1,0 +1,90 @@
+/* appointments.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  h1, h2 {
+    text-align: center;
+  }
+  
+  #logout {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    border-radius: 12px;
+    margin-left: 75%;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+  }
+  
+  .container table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .container table tr:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .container table td {
+    padding: 10px 0;
+  }
+  
+  .container table td:last-child {
+    text-align: center;
+  }
+  
+  .container table td button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 12px;
+  }
+  
+  .container table td button:hover {
+    background-color: #45a049;
+  }
+  
+  .container table td button.editBtn {
+    background-color: #007bff;
+  }
+  
+  .container table td button.editBtn:hover {
+    background-color: #0062cc;
+  }
+  
+  .container table td button.removeBtn {
+    background-color: #dc3545;
+  }
+  
+  .container table td button.removeBtn:hover {
+    background-color: #c82333;
+  }
+  
